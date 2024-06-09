@@ -1,14 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import MainModels
 
 
 
 def index(request):
-    contex = {
-        "name": "Магазин мебели Home",
-        "title": "Главная"
-              }
-    return render(request,'main/index.html',contex)
+    title=MainModels.objects.get(id=1)
+    return render(request,'main/index.html',{"title":title})
 
 def about(request):
     contex = {

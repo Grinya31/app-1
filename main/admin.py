@@ -5,3 +5,4 @@ from .models import MainModels
 
 class MainModelsAdmin(admin.ModelAdmin):
     list_display=["title","name","content"]
+

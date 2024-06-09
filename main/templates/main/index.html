@@ -3,9 +3,9 @@
 {% block css %}
     <link rel="stylesheet" href={% static "deps/css/my_footer_css.css" %}>
 {% endblock %}
-{% block title %}{{ title }}{% endblock %}
+{% block title %}{{ title.title }}{% endblock %}
 {% block content %}
-    <h1 class="mt-5 pt-5"><strong>{{ name }}</strong></h1>
+    <h1 class="mt-5 pt-5"><strong>{{ title.name }}</strong></h1>
 {% endblock %}
 {% block footer %}       
 <footer class="py-4 bg-dark">
