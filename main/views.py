@@ -4,7 +4,17 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request,'index.html')
+    contex = {
+        "name": "Магазин мебели Home",
+        "title": "Главная"
+              }
+    return render(request,'main/index.html',contex)
 
 def about(request):
-    return HttpResponse('О нас')
+    contex = {
+        "name": "О нас",
+        "title": "Home - О нас", 
+        "text_on_page": "Привет"
+
+              }
+    return render(request,'main/about.html',contex)
