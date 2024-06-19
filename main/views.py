@@ -7,7 +7,7 @@ def index(request):
     return render(request,'index.html',)
 
 def about(request):
-    return HttpResponse('О нас')
+    return render(request,'about.html')
 
 def contact(request):
     return HttpResponse("Контакт")
