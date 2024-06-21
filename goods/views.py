@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import *
+
 
 def catalog(request):
     return render(request,'goods/catalog.html')

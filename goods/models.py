@@ -10,6 +10,9 @@ class Categories(models.Model):
         db_table="Category"
         verbose_name="Категория"
         verbose_name_plural="Категории"
+   
+    def __str__(self):
+        return f"{self.name}"
 
 
 
@@ -28,3 +31,8 @@ class Goodsmodels(models.Model):
         db_table="Goods"
         verbose_name="Продукт"
         verbose_name_plural="Продукты"
+    
+
+    
+    def __str__(self):
+        return f"{self.name}"

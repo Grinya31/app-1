@@ -10,7 +10,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Goodsmodels)
 class GoodsAdmin(admin.ModelAdmin):
-    list_display=['name','slug',]
-    fields=['name','slug']
+    list_display=['name','slug','price','discount']
+    fields=['name','slug','description','image','price','discount','category']
     prepopulated_fields={'slug':('name',)}
 
