@@ -7,6 +7,3 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display=['name','slug']
     fields=['name','slug']
     prepopulated_fields={'slug':('name',)}
-
-
-# Register your models here.

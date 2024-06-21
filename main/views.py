@@ -11,8 +11,8 @@ def index(request):
 def about(request):
     return render(request,'about.html')
 
-def contact(request):
+def contact():
     return HttpResponse("Контакт")
 
-def dostavka(request):
+def dostavka():
     return HttpResponse('Доставка')
